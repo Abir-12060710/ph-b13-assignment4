@@ -52,24 +52,24 @@
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto my-16">
+    <main class="max-w-6xl mx-auto my-16" id="main-cont">
         <!-- main page nav  -->
-        <section class="main-page-navg">
+        <section class="main-page-nav">
             <div class="mainpghd flex justify-between items-center">
                 <div class="title text-[#002C5C] font-semibold text-xl">Available Jobs</div>
                 <div id="jobs-num" class="font-medium text-[16px] text-[#64748B]">8</div>
             </div>
             <div class="interaction-tab flex mt-6">
                 <button
-                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm">All</button>
+                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm" id="nav-btn-1">All</button>
                 <button
-                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm">Interviewed</button>
+                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm" id="nav-btn-2">Interviewed</button>
                 <button
-                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm">Rejected</button>
+                    class="interaction-btn min-w-24 max-h-10 text-center mr-2 bg-white border-2 border-[#F1F2F4] text-[#64748B] font-medium text-sm  rounded-sm" id="nav-btn-3">Rejected</button>
             </div>
         </section>
         <!-- job cards  -->
-        <section class="jobcards mt-4">
+        <section class="jobcards mt-4 hidden" id="job-cards">
             <!-- card 1 -->
             <div class="job1 jobcard bg-white  rounded-lg border-2 border-[#F1F2F4] p-6 mb-4">
                 <div class="jobcard-hd flex justify-between items-center">
@@ -77,7 +77,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">Mobile First Corp</div>
                         <div class="sub-title-text text-[#64748B] ">React Native Developer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -87,15 +87,15 @@
                     </ul>
                 </div>
                 <div
-                    class="job-status py-2 px-3 uppercase bg-[#EEF4FF] rounded-sm text-[#002C5C] font-medium max-w-36 text-center">
+                    class="job-status py-2 px-3 uppercase rounded-sm bg-[#EEF4FF]  text-[#002C5C] font-medium max-w-36 text-center" >
                     Not Applied </div>
                 <div class="job-details mt-2 text-[#323B49] text-sm">Build cross-platform mobile applications using
                     React Native. Work on products used by millions of users worldwide.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
             <!-- card 2 -->
@@ -105,7 +105,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">Web Designer & Developer</div>
                         <div class="sub-title-text text-[#64748B] ">React Native Developer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -121,9 +121,9 @@
                     clients. Must have portfolio and experience with modern web design trends.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
                         <div class="sub-title-text text-[#64748B] ">Data Visualization Specialist</div>
                     </div>
                     <div id="delete-btn"><i
-                            class="fa-regular fa-trash-can text-[#64748B]"></i>
+                            class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i>
                     </div>
                 </div>
                 <div class="main-requirments my-5">
@@ -153,9 +153,9 @@
                 </div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">CloudFirst Inc</div>
                         <div class="sub-title-text text-[#64748B] ">Backend Developer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -181,9 +181,9 @@
                 <div class="job-details mt-2 text-[#323B49] text-sm">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -194,7 +194,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">Innovation Labs</div>
                         <div class="sub-title-text text-[#64748B] ">UI/UX Engineer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -209,9 +209,9 @@
                 <div class="job-details mt-2 text-[#323B49] text-sm">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -222,7 +222,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">MegaCorp Solutions</div>
                         <div class="sub-title-text text-[#64748B] ">JavaScript Developer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -237,9 +237,9 @@
                 <div class="job-details mt-2 text-[#323B49] text-sm">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -250,7 +250,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">StartupXYZ</div>
                         <div class="sub-title-text text-[#64748B] ">Full Stack Engineer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -265,9 +265,9 @@
                 <div class="job-details mt-2 text-[#323B49] text-sm">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
 
@@ -278,7 +278,7 @@
                         <div class="jobtitle font-semibold text-lg text-[#002C5C]">TechCorp Industries</div>
                         <div class="sub-title-text text-[#64748B] ">Senior Frontend Developer</div>
                     </div>
-                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B]"></i></div>
+                    <div id="delete-btn"><i class="fa-regular fa-trash-can text-[#64748B] dlt-btn"></i></div>
                 </div>
                 <div class="main-requirments my-5">
                     <ul class="flex list-disc gap-10 text-sm text-[#64748B]">
@@ -293,15 +293,15 @@
                 <div class="job-details mt-2 text-[#323B49] text-sm">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</div>
                 <div class="usr-decision mt-5">
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2">Interview</button>
+                        class="min-w-24 min-h-9 border-2 border-[#10B981] rounded-sm text-[#10B981] font-semibold text-sm mr-2 interview-btn option-btn">Interview</button>
                     <button
-                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2">Rejected</button>
+                        class="min-w-24 min-h-9 border-2 border-[#EF4444] rounded-sm text-[#EF4444] font-semibold text-sm mr-2 rejected-btn option-btn">Rejected</button>
                 </div>
             </div>
         </section>
 
         <!-- empty section  -->
-         <section class="empty mt-4 bg-white rounded-lg border-2 border-[#F1F2F4] p-6 mb-4">
+         <section class="empty mt-4 bg-white rounded-lg border-2 border-[#F1F2F4] p-6 mb-4 hidden " id="empty-section">
             <div class="empty-icon flex justify-center mt-28">
                 <img src="./assests/jobs.png" alt="jobs">
             </div>
@@ -310,10 +310,21 @@
                 <div class="no-jobs-subtitle text-[#64748B] text-sm text-center mb-28">Check back soon for new job opportunities</div>
             </div>
          </section>
+         <section id="interviwed" class="hidden mt-4">
+
+         </section>
+         <section id="rejected" class="hidden mt-4">
+
+         </section>
+
     </main>
 
     <footer></footer>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/functions.js"></script>
+    <!-- <script src="js/chatgpt.js"></script> -->
+    <script src="js/event.handleing.js"></script>
+    <script src="js/gemini.js"></script>
 </body>
 
 </html>
